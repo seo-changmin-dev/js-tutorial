@@ -1,0 +1,141 @@
+:root {
+  /* color */
+  --color-black: #3f454d;
+  --color-white: #ffffff;
+  --color-blue: #3b88c3;
+  --color-yellow: #fbbe28;
+  --color-pink: #fd7f84;
+  --color-light-grey: #dfdfdf;
+}
+
+* {
+  box-sizing: border-box;
+
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--color-black);
+}
+
+.logo-home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 80px;
+}
+
+.filter-bar {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 32px;
+}
+
+.type-filter {
+  display: flex;
+  list-style: none;
+}
+
+.type-filter > li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 48px;
+  height: 48px;
+}
+
+.type-filter > li > img {
+  width: 80%;
+}
+
+.type-filter > li > img:hover {
+  width: 100%
+}
+
+.color-filter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.color-filter > li {
+  width: 80px;
+  height: 48px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: bold;
+}
+
+.color-filter > li > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 80%;
+  height: 80%;
+}
+
+.color-filter > li > div:hover {
+  width: 100%;
+  height: 100%;
+}
+
+.color-filter > li:nth-of-type(1) > div {
+  background-color: var(--color-blue);
+}
+
+.color-filter > li:nth-of-type(2) > div {
+  background-color: var(--color-yellow);
+}
+
+.color-filter > li:nth-of-type(3) > div {
+  background-color: var(--color-pink);
+}
+
+.item-list-container {
+  display: flex;
+  justify-content: center;
+}
+
+.item-list {
+  width: 432px;
+  margin-top: 24px;
+  
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-list .item {
+  width: 100%;
+  
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  background-color: var(--color-white);
+  border: solid 1px black;
+  border-radius: 8px;
+
+  padding: 8px 16px;
+  margin-top: 8px;
+}
+
+.item-list .item > img {
+  width: 40px;
+}
+
+.item-list .item > div {
+  margin-left: 16px;
+}
